@@ -2,6 +2,9 @@
 
 This app is meant to test your Docker orchestration deployment such as Docker Swarm, Kubernetes or ECS. It gives you basic network details.
 
+![alt text](sc.png)
+
+
 ### Run
 The app listens on port 8000
 
