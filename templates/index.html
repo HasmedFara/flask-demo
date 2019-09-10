@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Demo App</title>
+
+</head>
+<style>
+    .center {
+        text-align: center;
+    }
+
+    code {
+        background-color: aliceblue;
+        padding: 4px;
+    }
+</style>
+<body>
+<div class="center">
+    <h1>Testing Flask App</h1>
+    <br>
+    <p><strong>Time:</strong> {{ time }} (UTC)</p>
+    <p><strong>Remote Addr:</strong> {{ request.remote_addr }}</p>
+    <p><strong>Local IP:</strong> {{ ip }}</p>
+    <p><strong>Hostname:</strong> {{ hostname }}</p>
+    <br>
+    <p>Using a custom port number</p>
+    <code>
+        docker run -e PORT=9000 -p 9000:9000 flask-demo
+    </code>
+
+</div>
+
+
+</body>
+</html>
